@@ -4,6 +4,8 @@ function Calculator(){
   let num2 = Number(prompt("Enter num2:"));
   sum(num1,num2);
   subtract(num1,num2);
+  multiply(num1,num2);
+  divide(num1,num2);
 }
 
 
@@ -14,4 +16,12 @@ document.getElementById("sumRes").innerHTML=`<p> ${a} + ${b} = ${total} </p>`;
 function subtract(a,b){
   let total = a - b;
   document.getElementById("subRes").innerHTML=`<p> ${a} - ${b} = ${total} </p>`;
+}
+function multiply(a,b){
+  let total = a * b;
+  document.getElementById("mulRes").innerHTML=`<p> ${a} * ${b} = ${total} </p>`;
+}
+function divide(a,b){
+  let total = a/b;
+  document.getElementById("divRes").innerHTML=`<p> ${a} / ${b} = ${total} </p>`;
 }
